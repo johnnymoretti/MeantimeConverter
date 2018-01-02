@@ -1,4 +1,4 @@
-package eu.fbk.dh;
+package eu.fbk.dh.MeantimeConverter;
 
 import com.google.common.base.Joiner;
 import com.google.common.collect.ArrayListMultimap;
@@ -63,7 +63,7 @@ public class MeantimeConverter {
                             for (int i = 0; i < relations.getLength(); i++) {
 
                                 Node referesNode = relations.item(i);
-                                System.out.println(((Element) referesNode).getAttribute("r_id"));
+                                //System.out.println(((Element) referesNode).getAttribute("r_id"));
 
 
                                 expr = xpath.compile("./target");
@@ -113,7 +113,7 @@ public class MeantimeConverter {
 
                             }
 
-                            System.out.println(target_type_map);
+                            //System.out.println(target_type_map);
 
                             Map<String, String> annotated_tokens = new HashMap<>();
 
